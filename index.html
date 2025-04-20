@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Input Wave</title>
+  </head>
+
+  <body>
+    <div class=" form__container">
+      <h1>Please Login</h1>
+      <ul class="form__tabs">
+        <li onclick="login()" class="tab ">LogIn</li>
+        <li onclick="register()" class="tab active">Register</li>
+      </ul>
+      <div class="forms">
+        <form class=" login__form--content" id="LoginForm">
+          <div class="form-control">
+            <input type="text/email" required>
+            <label>Email</label>
+            <!-- <label>
+                                <span style="transition-delay: 0ms">E</span>
+                                <span style="transition-delay: 50ms">m</span>
+                                <span style="transition-delay: 100ms">a</span>
+                                <span style="transition-delay: 150ms">i</span>
+                                <span style="transition-delay: 200ms">l</span>
+                            </label> -->
+          </div>
+
+          <div class="form-control">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+
+          <button class="btn">Login</button>
+
+          <p class="text">Don't have an account? <a href="#" class="reg">Register</a> </p>
+        </form>
+
+        <form class="register__form--content active" id="RegForm">
+          <div class="form-control">
+            <input type="text" required>
+            <label>User Name</label>
+          </div>
+          <div class="form-control">
+            <input type="text" required>
+            <label>Email</label>
+          </div>
+          <div class="form-control">
+            <input type="password" required>
+            <label>Password</label>
+          </div>
+          <button class="btn">Register</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
